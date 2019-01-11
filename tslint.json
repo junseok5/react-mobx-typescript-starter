@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "rules": {
+    // rule 입력 시 마지막 줄에는 ,을 빼야함. 빼지 않을 시 unexpected token 에러 발생.
+    "ordered-imports": false,
+    "interface-over-type-literal": false,
+    "object-literal-sort-keys": false,
+    "no-console": false
+  }
+}
